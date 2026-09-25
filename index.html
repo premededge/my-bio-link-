@@ -48,3 +48,99 @@
     width: 54px;
     height: 54px;
     border-radius: 50%;
+    border: 1.5px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+  .mark svg { width: 20px; height: 20px; }
+  .kicker {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: var(--slate);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(30px, 8vw, 38px);
+    line-height: 1.08;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  h1 span {
+    display: block;
+    color: var(--gold);
+    font-style: italic;
+    font-weight: 500;
+  }
+  .tagline {
+    color: var(--slate);
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 300px;
+    margin: 14px 0 30px;
+  }
+  .cta {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background: var(--gold);
+    color: var(--navy-deep);
+    font-weight: 600;
+    font-size: 15.5px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    letter-spacing: 0.01em;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+  }
+  .cta:active { transform: scale(0.98); }
+  @media (hover: hover) {
+    .cta:hover { box-shadow: 0 8px 20px rgba(201,150,44,0.28); transform: translateY(-1px); }
+  }
+  .cta-sub {
+    font-size: 12.5px;
+    color: var(--slate);
+    margin-top: 12px;
+  }
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: rgba(147,160,188,0.35);
+    margin: 34px 0 20px;
+  }
+  .note {
+    font-size: 12.5px;
+    color: rgba(147,160,188,0.75);
+    line-height: 1.6;
+    max-width: 280px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cta { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C9962C" stroke-width="2" stroke-linecap="round">
+        <line x1="12" y1="5" x2="12" y2="19"/>
+        <line x1="5" y1="12" x2="19" y2="12"/>
+      </svg>
+    </div>
+
+    <p class="kicker">for pre-med parents</p>
+    <h1>The Pre&#8209;Med Edge<span>Give your child the edge.</span></h1>
+
+    <p class="tagline">What admissions committees actually see — and what your child's school counselor will never tell you.</p>
+
+    <a class="cta" href="https://www.amazon.com/dp/B0HKYZ287X" target="_blank" rel="noopener">Get the book on Amazon</a>
+    <p class="cta-sub">Paperback &amp; Kindle</p>
+
+    <div class="divider"></div>
+    <p class="note">17 strategy modules, real case files, and an age-by-age roadmap from middle school to the acceptance letter.</p>
+  </div>
+</body>
+</html>
